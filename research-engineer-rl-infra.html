@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Research Engineer, RL infra</title>
+  <meta name="description" content="AI Research Engineer, RL infra — distributed RL training and data systems at AMD.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root { --bg: #0b0f14; --accent: #34d399; --accent2: #38bdf8; --text: #f1f5f9; --muted: #94a3b8; --border: #2a3a52; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh; }
+    header { border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; background: rgba(11, 15, 20, 0.92); }
+    header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
+    header a { color: var(--accent2); margin-right: 0.75rem; }
+    main { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 3rem; }
+    .jd-section { margin-bottom: 2rem; }
+    .jd-section h2 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.6rem; }
+    .jd-section p, .jd-section ul { font-size: 0.95rem; }
+    .jd-section ul { margin: 0.35rem 0 0 1.1rem; }
+    .jd-section li { margin-top: 0.4rem; }
+    .actions { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .btn { appearance: none; border: 1px solid rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.12); color: #7dd3fc; font-size: 0.85rem; font-weight: 600; padding: 0.55rem 1rem; border-radius: 6px; cursor: pointer; }
+    .toast { position: fixed; bottom: 1.25rem; right: 1.25rem; background: var(--accent); color: #0c1222; font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1rem; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Research Engineer, RL infra</h1>
+    <p>Distributed training · Rollouts · Santa Clara, CA (or as agreed)</p>
+    <p>
+      <a href="index.html">All roles</a>
+      <a href="research-scientist-rl.html">RL</a>
+      <a href="research-scientist-rsi.html">RSI</a>
+      <a href="research-scientist-generalizing-hw.html">Gen HW</a>
+    </p>
+  </header>
+  <main>
+    <section class="jd-section">
+      <h2>The Role</h2>
+      <p>We are hiring an <strong>AI Research Engineer</strong> to own <strong>reinforcement learning infrastructure</strong> at scale: distributed policy and value training, rollout generation, logging, checkpointing, and researcher-facing APIs on large GPU fleets. You make RL scientists productive by improving throughput, fault tolerance, reproducibility, and observability—turning fragile notebooks into <strong>reliable systems</strong> that RSI, generalizing-HW, and RL research programs depend on.</p>
+    </section>
+    <section class="jd-section">
+      <h2>The Person</h2>
+      <p>You profile before you optimize; you treat researcher time as expensive as GPU time. You communicate SLAs, capacity plans, and incident patterns clearly and partner on cost–quality tradeoffs.</p>
+    </section>
+    <section class="jd-section">
+      <h2>Key Responsibilities</h2>
+      <ul>
+        <li>Design and implement distributed RL training stacks (data parallel, pipeline parallel, or hybrid) integrated with AMD’s schedulers and storage</li>
+        <li>Build high-throughput rollout workers, trajectory stores, and reward computation pipelines with versioning and audit trails</li>
+        <li>Instrument jobs for debugging (NaNs, stragglers, OOMs), implement autoscaling and preemption-safe checkpointing</li>
+        <li>Collaborate with research scientists on experiment templates, hyperparameter sweeps, and safe promotion paths from research to wider team use</li>
+        <li>Drive reliability: on-call rotations, runbooks, and postmortems for infra incidents affecting RL training</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Preferred Experience</h2>
+      <ul>
+        <li>Master’s or PhD in CS or related, or Bachelor’s with strong systems track record in ML platforms</li>
+        <li>Deep experience with PyTorch (or JAX), NCCL/MPI-style distributed training, and GPU cluster orchestration</li>
+        <li>Prior ownership of RL training infra, LLM post-training pipelines, or large-scale experiment management</li>
+        <li>Proficiency in C++/Python performance tuning, I/O optimization, and containerized workloads</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Academic Credentials</h2>
+      <ul>
+        <li>Bachelor’s degree required; Master’s or PhD preferred for research-heavy collaboration depth.</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Outcomes</h2>
+      <ul>
+        <li><strong>Throughput</strong> — documented increase in effective RL training throughput (tokens or rollouts per GPU-hour) on flagship internal workloads</li>
+        <li><strong>Reliability</strong> — meet agreed SLOs for job success rate and mean time to recovery on the RL training platform</li>
+        <li><strong>Adoption</strong> — self-service RL training templates used by all three scientist tracks (RL, RSI, generalizing HW) with positive researcher satisfaction scores</li>
+      </ul>
+    </section>
+    <div class="actions"><button type="button" class="btn" id="copyBtn">Copy full JD</button></div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+  <script>
+    const copyText = `AI Research Engineer, RL infra
+Distributed training · Rollouts · Santa Clara, CA (or as agreed)
+
+THE ROLE
+We are hiring an AI Research Engineer to own reinforcement learning infrastructure at scale: distributed policy and value training, rollout generation, logging, checkpointing, and researcher-facing APIs on large GPU fleets. You make RL scientists productive by improving throughput, fault tolerance, reproducibility, and observability—turning fragile notebooks into reliable systems that RSI, generalizing-HW, and RL research programs depend on.
+
+THE PERSON
+You profile before you optimize; you treat researcher time as expensive as GPU time. You communicate SLAs, capacity plans, and incident patterns clearly and partner on cost–quality tradeoffs.
+
+KEY RESPONSIBILITIES
+• Design and implement distributed RL training stacks (data parallel, pipeline parallel, or hybrid) integrated with AMD's schedulers and storage
+• Build high-throughput rollout workers, trajectory stores, and reward computation pipelines with versioning and audit trails
+• Instrument jobs for debugging (NaNs, stragglers, OOMs), implement autoscaling and preemption-safe checkpointing
+• Collaborate with research scientists on experiment templates, hyperparameter sweeps, and safe promotion paths from research to wider team use
+• Drive reliability: on-call rotations, runbooks, and postmortems for infra incidents affecting RL training
+
+PREFERRED EXPERIENCE
+• Master's or PhD in CS or related, or Bachelor's with strong systems track record in ML platforms
+• Deep experience with PyTorch (or JAX), NCCL/MPI-style distributed training, and GPU cluster orchestration
+• Prior ownership of RL training infra, LLM post-training pipelines, or large-scale experiment management
+• Proficiency in C++/Python performance tuning, I/O optimization, and containerized workloads
+
+ACADEMIC CREDENTIALS
+• Bachelor's degree required; Master's or PhD preferred for research-heavy collaboration depth.
+
+OUTCOMES
+• Throughput — documented increase in effective RL training throughput (tokens or rollouts per GPU-hour) on flagship internal workloads
+• Reliability — meet agreed SLOs for job success rate and mean time to recovery on the RL training platform
+• Adoption — self-service RL training templates used by all three scientist tracks (RL, RSI, generalizing HW) with positive researcher satisfaction scores`;
+    const toast = document.getElementById('toast');
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(copyText); } catch {
+        const ta = document.createElement('textarea'); ta.value = copyText; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      }
+      toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>

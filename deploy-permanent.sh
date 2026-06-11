@@ -37,7 +37,7 @@ git config user.email "burak.uzkent@amd.com"
 if [ -z "$(git status --porcelain 2>/dev/null)" ] && [ -n "$(git rev-parse HEAD 2>/dev/null)" ]; then
   :
 elif ! git rev-parse HEAD >/dev/null 2>&1; then
-  git add index.html forward-deployed-voc.html rl-strategic-partnerships.html hardware-metareasoning.html applied-hw-priorities.html .nojekyll SHARE.md deploy-permanent.sh
+  git add index.html research-scientist-rl.html research-scientist-rsi.html research-scientist-generalizing-hw.html research-engineer-rl-infra.html .nojekyll SHARE.md deploy-permanent.sh
   git commit -m "Add AMD AI four role job descriptions"
 else
   git add -A

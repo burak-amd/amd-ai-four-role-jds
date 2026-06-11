@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Research Scientist, generalizing hardware engineering</title>
+  <meta name="description" content="AI Research Scientist — generalizing hardware engineering and AI for HW flows at AMD.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root { --bg: #0b0f14; --accent: #fbbf24; --accent2: #38bdf8; --text: #f1f5f9; --muted: #94a3b8; --border: #2a3a52; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh; }
+    header { border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; background: rgba(11, 15, 20, 0.92); }
+    header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
+    header a { color: var(--accent2); margin-right: 0.75rem; }
+    main { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 3rem; }
+    .jd-section { margin-bottom: 2rem; }
+    .jd-section h2 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.6rem; }
+    .jd-section p, .jd-section ul { font-size: 0.95rem; }
+    .jd-section ul { margin: 0.35rem 0 0 1.1rem; }
+    .jd-section li { margin-top: 0.4rem; }
+    .actions { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .btn { appearance: none; border: 1px solid rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.12); color: #7dd3fc; font-size: 0.85rem; font-weight: 600; padding: 0.55rem 1rem; border-radius: 6px; cursor: pointer; }
+    .toast { position: fixed; bottom: 1.25rem; right: 1.25rem; background: var(--accent); color: #1e1033; font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1rem; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Research Scientist, generalizing hardware engineering</h1>
+    <p>Transfer across programs · Metareasoning · Santa Clara, CA (or as agreed)</p>
+    <p>
+      <a href="index.html">All roles</a>
+      <a href="research-scientist-rl.html">RL</a>
+      <a href="research-scientist-rsi.html">RSI</a>
+      <a href="research-engineer-rl-infra.html">RL infra</a>
+    </p>
+  </header>
+  <main>
+    <section class="jd-section">
+      <h2>The Role</h2>
+      <p>We are hiring an <strong>AI Research Scientist</strong> to make AI systems <strong>generalize across hardware engineering contexts</strong>—different SoC programs, toolchains, process nodes, and teams—without bespoke retraining for every program. You will work on <strong>metareasoning</strong> (when to call which tool or simulator), representation learning across flows (RTL, verification, physical design), and learning under <strong>high- or mixed-latency rewards</strong> typical of silicon signoff. You partner with methodology and silicon teams to turn one-off wins into <strong>reusable models, benchmarks, and transfer protocols</strong> that compound across AMD’s roadmap.</p>
+    </section>
+    <section class="jd-section">
+      <h2>The Person</h2>
+      <p>You think in distribution shift, domain adaptation, and structured priors—not only bigger models. You respect domain experts and treat their time and signoff criteria as first-class constraints in problem formulation.</p>
+    </section>
+    <section class="jd-section">
+      <h2>Key Responsibilities</h2>
+      <ul>
+        <li>Research transfer and multi-task learning for engineering agents across IP blocks, tools, and program generations</li>
+        <li>Develop metareasoning policies for budgeting expensive EDA steps, selecting abstractions, and recovering from tool or data failures</li>
+        <li>Build cross-program benchmarks and datasets that expose generalization gaps and track progress over time</li>
+        <li>Collaborate with RL scientists on reward shaping and credit assignment when feedback is slow or heterogeneous</li>
+        <li>Publish at top venues where appropriate; maintain internal technical standards for “generalization claims” backed by evidence</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Preferred Experience</h2>
+      <ul>
+        <li>PhD or equivalent in ML with emphasis on transfer, meta-learning, agents, or long-horizon RL</li>
+        <li>Exposure to hardware development (RTL, verification, PD, or bring-up) or willingness to ramp with embedded experts</li>
+        <li>Experience with LLM tool use, planning, or hierarchical control in real toolchains</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Academic Credentials</h2>
+      <ul>
+        <li>PhD in Computer Science, Machine Learning, or related field strongly preferred.</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Outcomes</h2>
+      <ul>
+        <li><strong>Cross-program lift</strong> — demonstrate measurable transfer (e.g. zero-shot or few-shot) on at least two distinct silicon programs or toolchains versus program-specific baselines</li>
+        <li><strong>Benchmarks</strong> — maintain a generalization benchmark suite referenced by RL and RSI roadmaps</li>
+        <li><strong>Adoption</strong> — one metareasoning or transfer component integrated into a pilot flow with signed methodology owner</li>
+      </ul>
+    </section>
+    <div class="actions"><button type="button" class="btn" id="copyBtn">Copy full JD</button></div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+  <script>
+    const copyText = `AI Research Scientist, generalizing hardware engineering
+Transfer across programs · Metareasoning · Santa Clara, CA (or as agreed)
+
+THE ROLE
+We are hiring an AI Research Scientist to make AI systems generalize across hardware engineering contexts—different SoC programs, toolchains, process nodes, and teams—without bespoke retraining for every program. You will work on metareasoning (when to call which tool or simulator), representation learning across flows (RTL, verification, physical design), and learning under high- or mixed-latency rewards typical of silicon signoff. You partner with methodology and silicon teams to turn one-off wins into reusable models, benchmarks, and transfer protocols that compound across AMD's roadmap.
+
+THE PERSON
+You think in distribution shift, domain adaptation, and structured priors—not only bigger models. You respect domain experts and treat their time and signoff criteria as first-class constraints in problem formulation.
+
+KEY RESPONSIBILITIES
+• Research transfer and multi-task learning for engineering agents across IP blocks, tools, and program generations
+• Develop metareasoning policies for budgeting expensive EDA steps, selecting abstractions, and recovering from tool or data failures
+• Build cross-program benchmarks and datasets that expose generalization gaps and track progress over time
+• Collaborate with RL scientists on reward shaping and credit assignment when feedback is slow or heterogeneous
+• Publish at top venues where appropriate; maintain internal technical standards for "generalization claims" backed by evidence
+
+PREFERRED EXPERIENCE
+• PhD or equivalent in ML with emphasis on transfer, meta-learning, agents, or long-horizon RL
+• Exposure to hardware development (RTL, verification, PD, or bring-up) or willingness to ramp with embedded experts
+• Experience with LLM tool use, planning, or hierarchical control in real toolchains
+
+ACADEMIC CREDENTIALS
+• PhD in Computer Science, Machine Learning, or related field strongly preferred.
+
+OUTCOMES
+• Cross-program lift — demonstrate measurable transfer (e.g. zero-shot or few-shot) on at least two distinct silicon programs or toolchains versus program-specific baselines
+• Benchmarks — maintain a generalization benchmark suite referenced by RL and RSI roadmaps
+• Adoption — one metareasoning or transfer component integrated into a pilot flow with signed methodology owner`;
+    const toast = document.getElementById('toast');
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(copyText); } catch {
+        const ta = document.createElement('textarea'); ta.value = copyText; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      }
+      toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>

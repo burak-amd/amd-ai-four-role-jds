@@ -1,10 +1,10 @@
-# AMD AI — Four role descriptions (share)
+# AMD AI — Four research role descriptions (share)
 
 **Hub:** https://burak-amd.github.io/amd-ai-four-role-jds/
 
-- **1 · Forward deployed / VoC:** https://burak-amd.github.io/amd-ai-four-role-jds/forward-deployed-voc.html
-- **2 · RL (strategic partnerships):** https://burak-amd.github.io/amd-ai-four-role-jds/rl-strategic-partnerships.html
-- **3 · Hardware engineering AI:** https://burak-amd.github.io/amd-ai-four-role-jds/hardware-metareasoning.html
-- **4 · Applied AI (top HW priorities):** https://burak-amd.github.io/amd-ai-four-role-jds/applied-hw-priorities.html
+- **1 · AI Research Scientist, RL:** https://burak-amd.github.io/amd-ai-four-role-jds/research-scientist-rl.html
+- **2 · AI Research Scientist, RSI:** https://burak-amd.github.io/amd-ai-four-role-jds/research-scientist-rsi.html
+- **3 · AI Research Scientist, generalizing hardware engineering:** https://burak-amd.github.io/amd-ai-four-role-jds/research-scientist-generalizing-hw.html
+- **4 · AI Research Engineer, RL infra:** https://burak-amd.github.io/amd-ai-four-role-jds/research-engineer-rl-infra.html
 
 Repo: https://github.com/burak-amd/amd-ai-four-role-jds

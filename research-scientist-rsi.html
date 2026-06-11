@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Research Scientist, RSI</title>
+  <meta name="description" content="AI Research Scientist, RSI — recursive self-improvement research at AMD.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root { --bg: #0b0f14; --accent: #f472b6; --accent2: #38bdf8; --text: #f1f5f9; --muted: #94a3b8; --border: #2a3a52; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh; }
+    header { border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; background: rgba(11, 15, 20, 0.92); }
+    header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
+    header a { color: var(--accent2); margin-right: 0.75rem; }
+    main { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 3rem; }
+    .jd-section { margin-bottom: 2rem; }
+    .jd-section h2 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.6rem; }
+    .jd-section p, .jd-section ul { font-size: 0.95rem; }
+    .jd-section ul { margin: 0.35rem 0 0 1.1rem; }
+    .jd-section li { margin-top: 0.4rem; }
+    .actions { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .btn { appearance: none; border: 1px solid rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.12); color: #7dd3fc; font-size: 0.85rem; font-weight: 600; padding: 0.55rem 1rem; border-radius: 6px; cursor: pointer; }
+    .toast { position: fixed; bottom: 1.25rem; right: 1.25rem; background: var(--accent); color: #1e1033; font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1rem; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Research Scientist, RSI</h1>
+    <p>Recursive self-improvement · Santa Clara, CA (or as agreed)</p>
+    <p>
+      <a href="index.html">All roles</a>
+      <a href="research-scientist-rl.html">RL</a>
+      <a href="research-scientist-generalizing-hw.html">Gen HW</a>
+      <a href="research-engineer-rl-infra.html">RL infra</a>
+    </p>
+  </header>
+  <main>
+    <section class="jd-section">
+      <h2>The Role</h2>
+      <p>We are hiring an <strong>AI Research Scientist</strong> focused on <strong>recursive self-improvement (RSI)</strong> in a <strong>bounded, engineering-first</strong> sense: systems where models, data generators, or toolchains participate in improving their own training signals, curricula, or verification—always under explicit governance, kill switches, and human oversight. You will research when such loops help (e.g. synthetic data quality, targeted self-play, automated curriculum refinement) versus when they amplify bias or reward hacking, and you will design measurement and containment so RSI-style pipelines remain auditable and safe for AMD’s AI-for-HW and generative-AI programs.</p>
+    </section>
+    <section class="jd-section">
+      <h2>The Person</h2>
+      <p>You are skeptical by default but constructive: you formalize assumptions, bound autonomy, and insist on counterfactual evaluation. You connect RSI concepts to concrete metrics—data efficiency, robustness, regression rates—not open-ended capability claims.</p>
+    </section>
+    <section class="jd-section">
+      <h2>Key Responsibilities</h2>
+      <ul>
+        <li>Research self-improving training loops: model-generated supervision, iterative distillation, self-critique, and automated curriculum updates with clear scope limits</li>
+        <li>Develop theory- and systems-grounded evaluations for capability drift, Goodhart effects, and distributional shift in closed-loop training</li>
+        <li>Partner with RL scientists on where RSI-style objectives intersect policy optimization and preference learning</li>
+        <li>Define red-team protocols and monitoring for RSI pilots; document rollback criteria before experiments touch shared infrastructure</li>
+        <li>Publish or produce technical reports where appropriate; align internal narrative with responsible deployment standards</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Preferred Experience</h2>
+      <ul>
+        <li>PhD or equivalent in ML, AI safety, RL, or related field with publications or substantial work on iterative training, self-training, or open-ended learning</li>
+        <li>Experience with empirical safety evaluation, scalable oversight, or stress-testing of generative model training pipelines</li>
+        <li>Strong software skills for building controlled experimental harnesses and reproducible RSI microcosms</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Academic Credentials</h2>
+      <ul>
+        <li>PhD in Computer Science, Machine Learning, or related field strongly preferred.</li>
+      </ul>
+    </section>
+    <section class="jd-section">
+      <h2>Outcomes</h2>
+      <ul>
+        <li><strong>Controlled pilots</strong> — at least one approved RSI-style loop in production-adjacent sandboxes with pre-registered success and abort criteria</li>
+        <li><strong>Measurement</strong> — evaluation toolkit (metrics + tests) adopted by RL and generalizing-HW teams for monitoring iterative training</li>
+        <li><strong>Knowledge</strong> — internal design doc set defining what AMD means by RSI in scope, out of scope, and required controls</li>
+      </ul>
+    </section>
+    <div class="actions"><button type="button" class="btn" id="copyBtn">Copy full JD</button></div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+  <script>
+    const copyText = `AI Research Scientist, RSI
+Recursive self-improvement · Santa Clara, CA (or as agreed)
+
+THE ROLE
+We are hiring an AI Research Scientist focused on recursive self-improvement (RSI) in a bounded, engineering-first sense: systems where models, data generators, or toolchains participate in improving their own training signals, curricula, or verification—always under explicit governance, kill switches, and human oversight. You will research when such loops help (e.g. synthetic data quality, targeted self-play, automated curriculum refinement) versus when they amplify bias or reward hacking, and you will design measurement and containment so RSI-style pipelines remain auditable and safe for AMD's AI-for-HW and generative-AI programs.
+
+THE PERSON
+You are skeptical by default but constructive: you formalize assumptions, bound autonomy, and insist on counterfactual evaluation. You connect RSI concepts to concrete metrics—data efficiency, robustness, regression rates—not open-ended capability claims.
+
+KEY RESPONSIBILITIES
+• Research self-improving training loops: model-generated supervision, iterative distillation, self-critique, and automated curriculum updates with clear scope limits
+• Develop theory- and systems-grounded evaluations for capability drift, Goodhart effects, and distributional shift in closed-loop training
+• Partner with RL scientists on where RSI-style objectives intersect policy optimization and preference learning
+• Define red-team protocols and monitoring for RSI pilots; document rollback criteria before experiments touch shared infrastructure
+• Publish or produce technical reports where appropriate; align internal narrative with responsible deployment standards
+
+PREFERRED EXPERIENCE
+• PhD or equivalent in ML, AI safety, RL, or related field with publications or substantial work on iterative training, self-training, or open-ended learning
+• Experience with empirical safety evaluation, scalable oversight, or stress-testing of generative model training pipelines
+• Strong software skills for building controlled experimental harnesses and reproducible RSI microcosms
+
+ACADEMIC CREDENTIALS
+• PhD in Computer Science, Machine Learning, or related field strongly preferred.
+
+OUTCOMES
+• Controlled pilots — at least one approved RSI-style loop in production-adjacent sandboxes with pre-registered success and abort criteria
+• Measurement — evaluation toolkit (metrics + tests) adopted by RL and generalizing-HW teams for monitoring iterative training
+• Knowledge — internal design doc set defining what AMD means by RSI in scope, out of scope, and required controls`;
+    const toast = document.getElementById('toast');
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(copyText); } catch {
+        const ta = document.createElement('textarea'); ta.value = copyText; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+      }
+      toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>
